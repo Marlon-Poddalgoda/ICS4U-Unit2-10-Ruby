@@ -14,7 +14,6 @@ class Vehicle
     # initialize (constructor)
     def initialize(input_passengers, input_colour)
         # fields
-        raise "Cannot initialize abstract Vehicle class."
         @license_num = "" # instances won't run without these
         @cadence = 0 # instances won't run without these
         @pressurized_air = 0 # instances won't run without these
@@ -22,6 +21,7 @@ class Vehicle
         @colour = input_colour
         @speed = 0
         @max_speed = 120
+        raise "Cannot initialize abstract Vehicle class."
     end
 
     # getters
